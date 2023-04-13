@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .form-control
+    {
+    margin-bottom:8px;
+    }
+</style>
+<div class="row">
+    <div class="h2 text-center mt-3" >Contact<u style="color:orange">Us <i class="fa fa-phone"></i></u></div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10 bg-light">
+        <div class="row">
+            <div class="col-sm-7 p-0 " style="background:linear-gradient(45deg,orange ,white);">
+                <img src="{% static 'images/mom.jpg'%}" style="height:100%;width:100%;"/>
+            </div>
+            <div class="col-sm-5 p-5"style="background:linear-gradient(45deg,white,orange);">
+
+                <form method="post" autocomplete="off">
+                    {% csrf_token %}
+                    {% if S %}
+                    <div class="alert alert-success">
+                        <i>Thanks for enquiry........</i>
+                    </div>
+                    {% endif%}
+
+                Name <input type="text" placeholder="Enter your name.." class="form-control" name="name"/>
+                Email <input type="Email" placeholder="Enter Your Email.." class="form-control" name="email"/>
+                Mobil No<input type="text" placeholder="Enter your Mobile No.." class="form-control" name="mobile"/>
+                Message <textarea class="form-control" name="msg"></textarea>
+                <input type="submit" value="save" class="btn btn-warning"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>
+
+{% endblock %}

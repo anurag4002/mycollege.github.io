@@ -1,0 +1,281 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--    START SLIDER===============================================================================-->
+
+
+    <div class="row slider p-0">
+        <div class="col-sm-12 p-0">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner ">
+    <div class="carousel-item active">
+      <img src="{% static 'images/ct.jpg'%}" style="max-height:580px" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/annu.jpg'%}" style="max-height:580px"  class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/college10.jpg'%}" style="max-height:580px" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+    </div>
+
+<!--END SLIDER==================================================================-->
+
+<!--START CATEGORY============================================================================-->
+<div class="row pb-2 pt-4">
+    <div class="h3 text-center"><b class="text-info"></b>Our <u class="text-warning">Course</u><b style="color:#ff0000"><i class="fa fa-trades"></i></b></div>
+
+    <div class="col-sm-3 pt-2">
+        <div class="card" style="width: 100%;">
+  <img src="{% static 'images/cse.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title fs-4 text-center text-dark">Computer Science </h5>
+  </div>
+            <button type="button" style="width:40%;"  class="btn "><a href="/user/computerscience">Read More</a></button>
+</div>
+    </div>
+    <div class="col-sm-3 pt-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/itp.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title fs-4 text-center text-dark">Information Technology </h5>
+  </div>
+            <button type="button" style="width:40%;"  class="btn"><a href="/user/informationtechnology">Read More</a></button>
+</div>
+    </div>
+
+    <div class="col-sm-3 pt-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/civil.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+<h5 class="card-title fs-4 text-center text-dark">Mechanical</h5>
+  </div>
+            <button type="button" style="width:40%;"  class="btn"><a href="/user/mechanical">Read More</a></button>
+</div>
+    </div>
+    <div class="col-sm-3 pt-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/info1.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+<h5 class="card-title fs-4 text-center text-dark">Electrical </h5>
+  </div>
+            <button type="button" style="width:40%;"  class="btn"><a href="/user/electrical">Read More</a></button>
+</div>
+    </div>
+</div>
+
+<!--END category==========================================================================================-->
+<!--START ABOUT=================================================-->
+<div class="row about pt-4">
+        <div class="col-sm-2">
+            <div class="card" style="width:100%; border:solid 1px black;">
+<img src="{% static 'images/amit3.jpg'%}"  class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">Mission</h3>
+    <p class="card-text"> Help your friend with a fully-functional Internal Knowledge Base that
+        they can use to solve problems. Make it easy for your student to
+        learn how to gain more and more knowledge.</p>
+  </div>
+</div>
+        </div>
+        <div class="col-sm-7">
+            <div style="font-size:35px;"><b class="text-info"></b>Knowledge<u class="text-warning"> Content</u></div>
+           <div style="font-size:16px; text-align:justify;">
+               <p class="pt-2">The term content knowledge refers to the body of knowledge and information that teachers teach and that
+               students are expected to learn in a given subject or content area, such as English language arts,
+               mathematics, science, or social studies. Content knowledge generally refers to the facts, concepts,
+               theories, and principles that are taught and learned in specific academic courses, rather than to related
+               skills—such as reading, writing, or researching—that students also learn in school.
+               You cannot teach a child any more than you can grow a plant. <br/>The plant develops its own nature. The child
+               also teaches itself. But you can help it to go forward in its own way. What you can do is not of a positive
+               nature but negative. <br/>You can take away the obstacles and knowledge comes out of its own nature. Loosen the
+               soil a little, so that it may come out easily. Put a hedge round it, see that it is not kitted by anything.
+               You can supply the growing seed with the materials for the making up of its body, brining
+               to it the earth, the water, the air that it wants. And there your work stops.<br/>
+            A heavy reading load also challenges college students, as professors do not account for lengthy reading
+            requirements in other classes. As such, learners should practice time management skills. Attempting to read
+                   large quantities of text in one night does not set a person up for success.</div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card" style="width:100%; border:solid 1px black;">
+<img src="{% static 'images/cs2.jpg'%}"  class="card-img-top" alt="...">
+  <div class="card-body">
+    <h3 class="card-title">About Us</h3>
+    <p class="card-text">The moment I stepped on Grace’s campus I knew that Grace was not like other schools. Everyone was kind, friendly and inclusive. I was able to feel God’s presence and see how he was working through the people and programs simply by visiting. I knew God was calling me to be part of this amazing organization..</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<!--END ABOUT==================================-->
+<!--    START Fix Image============================================================================-->
+<div class="row fiximg p=0 ">
+    <div class="col-sm-12">
+        <div id="in" class="pt-5"><br/>
+            <h1 class="text-warning">Thanks for visiting my site</h1><br/><br/>
+            <h1 class="text-warning">Welcome To My College Portal</h1>
+        </div>
+    </div>
+</div>
+<!--start serviec====================================================================================-->
+<div class="row pt-3">
+    <div class="col-sm-6">
+        <center>
+         <img src="{% static 'images/amit1.jpg'%}" style="max-height:100%;" class="img-fluid"/>
+            </center>
+    </div>
+    <div class="col-sm-6" style="font-size:24px; text-align:justify;">
+        <p style="font-size:30px;">About <u class="text-warning">College</u></p>
+       <p class="pb-3"> My college is basically a college website of a college developed and designed by the student of
+        polytechnic college only where the complete details of the college their establishment date .management  members  is department and course everything is mentioned which help other people as
+        well to know about the respected college easily and accurately .<br/>
+          Higher Education is the key for a well developed career.  We take the pledge to be your companion and support you through every step of the admission process; right from application to seat confirmation. Our education experts will be at your request anytime you need them to guide you on your education path.
+           At the School of Engineering & Applied Sciences, B.Tech course curriculum/syllabus & teaching pedagogy give equal importance to theory and hands-on training. The focus is on Experiential and Applied Learning through practical exposure, thereby giving the students a unique edge.</p></div>
+
+</div>
+<div class="col-sm-1"></div>
+
+<!--IMAGES SLIDER=======================================================================-->
+
+<div class="row p-0  ps-3" style="min-height:140px;">
+    <div class="col-sm-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon1.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+  </div>
+    </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon2.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+    </div>
+    </div>
+    </div>
+    <div class="col-sm-2 ">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon3.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+</div>
+</div>
+</div>
+    <div class="col-sm-2 ">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon4.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+
+    </div>
+    </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon5.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+
+    </div>
+    </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon5.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+
+    </div>
+    </div>
+    </div>
+</div>
+
+
+<div class="row p-0 ps-3" style="min-height:140px;">
+    <div class="col-sm-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon12.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+  </div>
+</div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon7.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+    </div>
+    </div>
+    </div>
+    <div class="col-sm-2 ">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon8.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+</div>
+</div>
+</div>
+    <div class="col-sm-2 ">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon9.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+
+    </div>
+    </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon10.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+    </div>
+    </div>
+    </div>
+     <div class="col-sm-2">
+        <div class="card" style="width:100%;">
+  <img src="{% static 'images/icon10.jpg'%}" class="card-img-top" alt="...">
+  <div class="card-body">
+    </div>
+    </div>
+    </div>
+</div>
+<!--END SLIDER===================================================================-->
+
+<!--MAP==================================================================================-->
+
+<div class="row pt-3">
+    <div class="col-sm-12 p-0" style="min-height:350px;">
+        <section>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d621307.6706099771!2d81.53651293449181!3d26.97605704221948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999f62995555555%3A0x7136cb31bfaea5ff!2sGovernment%20Polytechnic%20Aadampur%20Tarabganj%20Gonda!5e0!3m2!1sen!2sin!4v1633170982800!5m2!1sen!2sin" width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </div>
+</div>
+<!--End services=====================================================================-->
+
+<!--Start Company Name===============================================================-->
+
+
+<!--End company=================================================================-->
+
+
+
+{% endblock %}

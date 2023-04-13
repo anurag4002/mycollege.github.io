@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"/>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <link href="{% static 'css/all.css'%}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <style>
+    #loading
+    {
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#fff
+    url('{% static "images/load1.gif"%}')
+    no-repeat center;
+    z-index:99999;
+    }
+        .header
+        {
+        min-height:100px;
+        text-align:center;
+        border-top:1px solid #ffab00;
+        }
+        .ic
+        {
+        font-size:23px;
+
+        height:25px;
+        width:25px;
+        padding-top:3px;
+        }
+        .ic:hover
+        {
+       // background:#ffab00;
+        //color:white;
+        transition:all ease 1s;
+        transform:rotate(360deg);
+        }
+        .menu
+        {
+        min-height:45px;
+        }
+        #menu ul li a
+        {
+        color:white;
+        }
+        #menu ul li a:hover
+        {
+        color:#ffab00;
+        transition:all ease .5s;
+        }
+        .category
+        {
+        min-height:200px;
+        }
+        .newproduct
+        {
+        min-height:500px;
+        background:#feaa00;
+        }
+        .services
+        {
+        min-height:500px;
+        }
+        .ufooter
+        {
+        min-height:300px;
+        background:#212529;
+        }
+        .bfooter
+        {
+        min-height:45px;
+        background:#212529;
+        margin-top:1px;
+        }
+        .offer
+        {
+        min-height:400px;
+        }
+        .mid
+        {
+        min-height:50px;
+        }
+        .fiximg
+        {
+        height:400px;
+        background:url('{% static "images/amit2.png"%}');
+        background-size:100% 100%;
+        background-attachment:fixed;
+
+        }
+        #in
+        {
+        height:400px;
+        background:rgba(0,0,0,.5);
+        text-align:center;
+        color:orange;
+        }
+        .about
+        {
+        min-height:460px;
+        }
+        .ip
+        {
+        height:900;
+        width:500px;
+
+        }
+
+
+    </style>
+</head>
+<body onload="myFunction()">
+
+<div id="loading"></div>
+
+<div class="container-fluid outer">
+    <div class="row bg-light" style="font-size:13px;">
+        <div class="col-sm-9" style="min-height:10px; " >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-phone fa-spin"></i>&nbsp;<a>Helpline No: +91-7307716878 | +91-7307716878 | +91-7307716878 </a>&nbsp;<i class="fa fa-envelope "></i>mishraanurag66031@gmail.com &nbsp;&nbsp;&nbsp;<i class="fab fa-location "></i>Lucknow road Gonda  &nbsp;&nbsp;<i class="fa fa-graduation-cap i"></i>My College</div>
+            <div class="col-sm-3">
+            <i class="fab fa-facebook "></i>&nbsp;&nbsp;
+            <i class="fab fa-instagram "></i>&nbsp;&nbsp;
+            <i class="fab fa-whatsapp "></i>&nbsp;&nbsp;
+            <i class="fab fa-youtube "></i>&nbsp;&nbsp;
+            <i class="fa fa-envelope "></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Developed by:Anurag mishra
+        </div>
+
+    </div>
+<!--    START HEADER==================================================================-->
+
+    <div class="row header"style="background:##c0c0c0;">
+        <div class="col-sm-2  p-1 text-danger">
+            <img src="{% static 'images/last.jpg'%}" style="min-height:100px; width:100px;" class="card-img-top" alt="...">
+        </div>
+        <div class="col-sm-10">
+
+            <div class="row">
+                <div class="col-sm-9 pt-4" style="color:#ffd11a"><p style="font-size:30px;"><b>Government Polytechnic Aadampur Tarabganj</b></p></div>
+                <div class="col-sm-3 pt-5">
+                    <i class="fab fa-facebook ic"></i>
+                    <i class="fab fa-twitter ic"></i>
+                    <i class="fab fa-youtube ic"></i>
+                    <i class="fab fa-whatsapp ic"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--    START NAV BAR=============================================================================-->
+
+    <div class="row menu"style="background:#000000;">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10" style="padding-left:10%;">
+                    <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">python manage
+        <li class="nav-item " >
+          <a class="nav-link active text-warning" aria-current="page" href="/user/home">
+              <i class="fa fa-home text-warning"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/user/about"><i class="fa fa-info-circle"></i>&nbsp;About us</a>
+
+        </li>
+
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/user/course" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-book-reader"></i> Course</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item text-dark" href="/user/computerscience">Computer science</a></li>
+            <li><a class="dropdown-item text-dark" href="/user/informationtechnology">Information Technology</a></li>
+            <li><a class="dropdown-item text-dark" href="/user/mechanical">Mechanical</a></li>
+            <li><a class="dropdown-item text-dark" href="/user/electrical">Electrical</a></li>
+          </ul>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="/user/placements/"><i class="fa fa-graduation-cap"></i> placements</a>
+        </li>
+
+
+           <li class="nav-item">
+          <a class="nav-link" href="/user/contactus"><i class="fa fa-phone"></i> Contact us</a>
+           </li>
+
+           <li class="nav-item">
+          <a class="nav-link" href="/user/faculty"><i class="fa fa-user"></i> Faculty</a>
+           </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/user/gallery"><i class="fa fa-images"></i> Gallery</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/user/recuiters"><i class="fa fa-user-shield"></i> Recuiters</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/admin/"><i class="fa fa-sign-in-alt"></i> Login</a>
+
+        </li>-->
+
+
+      </ul>
+    </div>
+  </div>
+</nav>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+        <!-- end menu -->
+    </div>
+
+
+
+    <div class="row content light" style="min-height:550px;">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+
+<!--    END IMAGES SLIDER=================================================================-->
+
+
+
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+    </div>
+
+
+    <div class="row ufooter" style="min-height:200px;">
+        <div class="col-sm-3  fs-1 text-light text-center p-5 ">
+                    <center><img src="{% static 'images/diploma.png'%}" style="max-height:70px;"/><br/></center>
+            <i class="fab fa-facebook "></i>
+            <i class="fab fa-instagram "></i>
+            <i class="fab fa-whatsapp "></i>
+            <i class="fab fa-youtube "></i>
+            <i class="fa fa-envelope "></i>
+        </div>
+        <div class="col-sm-3   text-light p-5">
+            <marquee direction="up" height="150px" width="390px"><b class="text-warning">Goverment Polytechnic Aadumpur Tarabganj,Gonda</b></marquee>
+        </div>
+        <div class="col-sm-3   text-light p-5">
+            <b><u>Contact Address</u></b><br/>
+            <i class="fa fa-map-marker text-warning pt-2"></i> Sihoriya Itwa  Rd,
+            Siddharath Nagar <br/>
+            Utter Pradesh 226022<br/>
+<i class="fa fa-phone text-warning"></i>+91-7307716878<br/>
+<i class="fa fa-envelope text-warning"></i> mishraanurag66031@gmail.com<br/>
+        </div>
+        <div class="col-sm-3  text-light p-5">
+            Accessibility<br/>
+            Report an Ethical Concern<br/>
+            Nondiscrimination<br/>
+            Privacy Statement
+        </div>
+    </div>
+
+<!--    START MID=======================================================================================-->
+   <div class="row mid bg-dark">-->
+        <div class="fs-5 text-center text-light"><pre><a href="# text-warning">Privacy</a> <a href="#">Term&Condition</a> <a href="#">Choices</a> <a href="# text-waning">272153</a> </pre></div>
+<div class=" text-center  text-light">Hard Work Is The Key To Success.<div><hr class="text-warning">
+
+</div>
+       </div>
+  </div>
+
+
+
+<!--  START BFOOTER====================================================================================&ndash;&gt;-->
+
+    <div class="row bfooter text-warning text-center py-2">
+        <div class="col-sm-6">Developed By :<b>Prof. Anurag Mishra</b></div>
+        <div class="col-sm-6">&copy; My College Pvt. Ltd.</div>
+    </div>
+</div>
+<script>
+    var preloader = document.getElementById('loading');
+    function myFunction(){
+    preloader.style.display = 'none';
+    }
+</script>
+</body>
+</html>
+
+

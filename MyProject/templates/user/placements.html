@@ -1,0 +1,57 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+    <div class="h2 text-center">Placements <i class="fa fa-graduation-cap text-warning"></i></div>
+
+<div class="row">
+ <div class="col-sm-9">
+     <div class="row pb-5">
+             {% if placement %}
+               {% for x in placement %}
+                <div class="col-sm-4">
+                <div class="card" style="width:100%;">
+                  <img src="/{{x.stupic}}" class="card-img-top" alt="...">
+                   <div class="card-body">
+                   <p class="card-text">
+                    <b>Student Name : </b>{{x.name}}<br/>
+                    <b>Course Name : </b>{{x.pcourse}}<br/>
+                    <b>Branch Name : </b>{{x.branch}}<br/>
+                    <b>Company Name : </b>{{x.cmpname}}<br/>
+<!--                    <b>Company Logo :</b>{{x.cmplogo}}<br/>-->
+                    <b>City Name : </b>{{x.city}}<br/>
+                    <b>Passing Year : </b>{{x.pyear}}<br/>
+                    <b>Designation : </b>{{x.designation}}<br/>
+                    <b>Date : </b>{{x.pdate}}<br/>
+                   </p>
+                </div>
+               </div>
+              </div>
+    {% endfor %}
+    {% endif %}
+
+
+         <div class="col-sm-4"></div>
+         <div class="col-sm-4"></div>
+     </div>
+ </div>
+<div class="col-sm-3" style="min-height:200px; background:blue;padding-top:5px;">
+    <ul class="list-group">
+  <li class="list-group-item active" aria-current="true">Our course</li>
+        {% if course %}
+        {% for x in course %}
+        <a href="/user/placements?msg={{x.id}}" style="text-decoration:none;"><li class="list-group-item">{{x.cname}}</li></a>
+        {% endfor %}
+        {% endif %}
+        <a href="/user/placements/" style="text-decoration:none;"><li class="list-group-item">All Placement</li></a>
+
+</ul>
+</div>
+
+    </div>
+
+
+
+
+
+
+{% endblock %}
